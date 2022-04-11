@@ -27,5 +27,5 @@ class Generator(nn.Module):
             # out: 3 x 64 x 64
         )
 
-    def get_generator(self):
-        return self.main
+    def forward(self, input):
+        return self.main(input)

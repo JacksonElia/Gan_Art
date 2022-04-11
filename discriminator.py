@@ -27,5 +27,5 @@ class Discriminator(nn.Module):
             nn.Flatten(),
             nn.Sigmoid())
 
-    def get_discriminator(self):
-        return self.main
+    def forward(self, input):
+        return self.main(input)
